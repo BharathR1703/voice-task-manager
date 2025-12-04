@@ -1,0 +1,26 @@
+{
+  "name": "voice-backend",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --watch src --ext js",
+    "start": "node src/index.js",
+    "seed": "node seed.js",
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "chrono-node": "^2.3.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "mongoose": "^7.5.0",
+    "openai": "^4.9.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "nodemon": "^3.0.1"
+  }
+}
